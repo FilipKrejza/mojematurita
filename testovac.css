@@ -1,0 +1,113 @@
+
+/* 1. ZÁKLADNÍ NASTAVENÍ (aby web "dýchal") */
+body {
+    background-color: #f0f8ff; /* Světle modrá */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Mezery mezi řádky v odstavci */
+    color: #333;
+}
+
+/* 2. HEADER (Hlavička a Navigace) */
+header {
+    background-color: #2c3e50; /* Tmavě modrá/šedá */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none; /* Zruší podtržení */
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #3498db; /* Barva při najetí myší */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* 3. MAIN (Hlavní obsah) */
+main {
+    max-width: 900px; /* Web nebude nekonečně široký */
+    margin: 20px auto; /* Vycentrování na střed */
+    padding: 20px;
+    background-color: white; /* Bílé pozadí pro text */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Jemný stín kolem obsahu */
+}
+
+/* 4. SEKCE (Jednotlivé kapitoly) */
+section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee; /* Čára pod každou sekcí */
+}
+
+h2 {
+    color: #2c3e50;
+    border-left: 5px solid #3498db; /* Modrý proužek u nadpisu */
+    padding-left: 10px;
+}
+
+/* 5. TVOJE SPECIÁLNÍ TŘÍDY */
+.muj-text {
+    color: #b9331b;
+    text-align: right;
+    font-style: italic;
+}
+
+.serunato {
+    color: #27ae60; /* Zelená */
+    font-weight: bold;
+}
+
+/* 6. FOOTER (Patička) */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+
+.obrazek-webu {
+    width: 50%;      /* Obrázek bude zabírat přesně polovinu šířky textu */
+    max-width: 400px; /* Ale zároveň nikdy nebude širší než 400px (aby nebyl obří na monitoru) */
+    height: auto;    /* Tohle tam nechej, aby se fotka nedeformovala */
+    display: block;
+    margin: 20px auto; /* Vycentrování */
+}
+
+
+
+
+/* 7. RESPONZIVITA (Media Query - ta "sračka" pro mobily) */
+@media (max-width: 600px) {
+    main {
+        width: 95%; /* Na mobilu využijeme skoro celou šířku */
+        margin: 10px auto;
+    }
+
+    .navbar a {
+        display: block; /* Odkazy pod sebou */
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Menší nadpis na mobilu */
+    }
+
+    .muj-text {
+        text-align: left; /* Na mobilu zarovnáme radši doleva */
+    }
+}
